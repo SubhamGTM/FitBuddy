@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitBuddy - Workout Planner</title>
+    <link rel="stylesheet" href="style.css" script.js>
+</head>
+<body>
+    <div class="container">
+        <h1 class="fade-in">FitBuddy - Your Workout Companion</h1>
+        <p>Select your fitness goal to receive a structured workout plan.</p>
+
+        <div class="form-group">
+            <label for="goal">Choose Goal:</label>
+            <select id="goal">
+                <option value="strength">Build Strength</option>
+                <option value="weight_loss">Lose Weight</option>
+                <option value="flexibility">Improve Flexibility</option>
+                <option value="endurance">Increase Endurance</option>
+                <option value="muscle_gain">Muscle Gain</option>
+            </select>
+        </div>
+        
+        <button class="btn bounce" onclick="suggestWorkout()">Get Workout Plan</button>
+
+        <div id="workout" class="workout-result slide-in"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
